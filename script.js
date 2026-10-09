@@ -62,7 +62,6 @@ function createTransactionElement(transaction) {
 }
 
 function updateSummary() {
-  // Tính tổng số dư hiện tại
   const balance = transactions.reduce((acc, transaction) => acc + transaction.amount, 0);
   
   const income = transactions
